@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function doWhile(sum){
+        var add=0;
+        var i=0;
+        do {
+            add+=sum[i];
+            i++;          
+        }while(i<sum.length);
+        console.log("using do While loop" ,add);
+    }
+
+        function whileLoop(sum){
+        var add=0;
+        var i=0;
+        while (i<sum.length) {
+            add+=sum[i];  
+            i++;        
+        }
+        console.log("using while loop" ,add);
+    }
+
+    function forLoop(sum){
+        var add=0;
+        for (let i = 0; i < sum.length; i++) {
+            add+=sum[i];          
+        }
+        console.log("using for loop" ,add);
+    }
+
+        let sum=[1,5,7,2,6,4];
+
+        forLoop(sum);
+        whileLoop(sum);
+        doWhile(sum);
+    </script>
+</body>
+</html>

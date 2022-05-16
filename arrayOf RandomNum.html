@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function AverageSum(arr){
+
+var sum=0;
+var average=0;
+for (let i = 0; i <arr.length; i++) {
+     sum+=arr[i];    
+     }
+     
+  console.log("sum: ",sum);
+
+  console.log("Average: ",sum/arr.length);
+
+}
+
+function evenOddCount(arr){
+
+          var even=0;
+          var odd=0;
+          for (let i = 0; i <arr.length; i++) {
+               if(arr[i]%2==0)  
+               even++;
+               else 
+               odd++;
+                
+               }
+               if(even>odd)
+            console.log("even count is high ",even);
+            else
+            console.log("odd count is high ",odd);
+
+      }
+
+function smallest(arr){
+          let small =arr[0];
+          for (let i = 1; i <arr.length; i++) {
+               if(arr[i]<small)  
+               small=[arr[i]]    ;
+            }
+            console.log("smallest element in the array is ",small);
+
+      }
+
+      function largest(arr){
+          let big =arr[0];
+          for (let i = 1; i <arr.length; i++) {
+               if(arr[i]>big)  
+               big=[arr[i]]    ;
+            }
+            console.log("Biggest element in the array is ",big);
+
+      }
+
+
+        function createArray(arr){
+        
+            for (let i = 0; i < 100; i++) {
+               arr[i]=Math.floor(Math.random()*100);          
+            }
+            console.log(arr);
+        }
+        let arr=[];
+     createArray(arr); //creating array
+     
+       largest(arr); //to find largest array
+       smallest(arr);
+       evenOddCount(arr);//even odd count
+       AverageSum(arr);
+    </script>
+    
+</body>
+</html>

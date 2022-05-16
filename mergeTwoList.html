@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function combine(l1,l2){
+
+            var len=l1.length+l2.length;
+        let result=[];
+        let j=0,k=0;
+
+        for (let i = 0; i < len; i++) {
+            
+            if(i%2==0){
+              result[i]=l1[k];
+              k++;
+            }
+              else
+              {
+              result[i]=l2[j];
+              j++;
+              }
+            
+        }
+
+        console.log(result);
+
+        }
+        let list1=[1,2,3];
+        let list2=['a','b','c']
+        combine(list1,list2);
+    </script>
+</body>
+</html>
