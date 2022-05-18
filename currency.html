@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function convertToEuro(currency){
+            var euro=currency*0.84;
+            console.log(currency," dollar in Euro",euro);
+
+        }
+
+
+        function convertToYen(currency){
+            var yen=currency*100.14;
+            console.log(currency," dollar in Japanese yen",yen);
+
+        }
+
+        function convertToRupee(currency){
+            var rupee=currency*74.28;
+            console.log(currency," dollar in Indian rupee",rupee);
+
+        }
+        var currency=parseInt(prompt("Enter the amount in dollar"));
+        convertToRupee(currency);
+        convertToYen(currency);
+        convertToEuro(currency);
+    </script>
+    
+</body>
+</html>

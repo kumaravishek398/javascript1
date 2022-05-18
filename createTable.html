@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function CreateTable()
+{
+var row = parseInt(prompt("Input number of rows"));
+var column =parseInt(prompt("Input number of columns"));
+  
+ for(var r=0;r<row;r++)
+  {
+   var x=document.getElementById('Table').insertRow(r);
+   for(var c=0;c<column;c++)  
+    {
+     var y=  x.insertCell(c);
+     y.innerHTML="("+r+","+c+")"; 
+    }
+   }
+}
+CreateTable();
+    </script>
+    
+</body>
+</html>
